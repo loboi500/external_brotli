@@ -1,17 +1,3 @@
-CC = g++
-CFLAGS += -O2
-CPPFLAGS += -std=c++11
-SOURCES = $(wildcard *.cc)
-EXECUTABLES = $(SOURCES:.cc=)
-BINDIR = bin
-
-all: $(EXECUTABLES)
-
-$(BINDIR):
-	mkdir -p $@
-
-$(EXECUTABLES): $(BINDIR)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $(addsuffix .cc, $@) -o $(BINDIR)/$@ -lgflags_nothreads
-
-clean:
-	rm -rf $(BINDIR)
+version https://git-lfs.github.com/spec/v1
+oid sha256:710802e82e8912902e6165352d176ede9d9a3f8206298ffd23591fe1f740ebcd
+size 300

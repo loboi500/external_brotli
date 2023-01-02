@@ -1,12 +1,3 @@
-workspace(name = "org_brotli_research")
-
-local_repository(
-    name = "org_brotli",
-    path = "..",
-)
-
-new_local_repository(
-    name = "divsufsort",
-    build_file = "BUILD.libdivsufsort",
-    path = "libdivsufsort",
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:546551d4b49fbe765c7aa804ac3218be95db5f2641aeb47326f09b036e90cc28
+size 221
